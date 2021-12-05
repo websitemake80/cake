@@ -240,7 +240,7 @@ transform: translateY(-20px);
 }
 @media (max-width: 400px){
 
-     .pepusi{
+     #cakeimg{
         margin-right: 550px;
         position: absolute;
         bottom: 50px;
