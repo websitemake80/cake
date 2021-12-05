@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Pepshi Website Landing Page</title>
+        <link rel="stylesheet" href="cakeint.css">
+
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+           <a href="#"><img src="shortcake2.png" class="logo"></a>
+           <div class="toggleMenu" onclick="menuToggle();"></div>
+           <ul class="navigation">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Menu</a></li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">Blogs</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>You should<br><span>Taste cakes</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Impedit magni, animi quasi velit eos quod eligendi accusamus.
+                    </p>
+                    <a href="#">View All Cakes</a>
+            </div>
+            <div class="imgBox" class="big-image">
+                <img src="bigcake.jpg" id="cakeimg"class="pepsi">
+                
+            </div>
+        </div>
+        <ul class="thumb" id="small-images">
+            <li><img src="cakepinkicon.png" onclick="changeBgColor('#ffc0cb')" ></li>
+            <li><img src="cakeblueicon.png" onclick="changeBgColor('#87cefa')"   ></li>
+            <li><img src="cakeorangeicon.png"onclick="changeBgColor('#ffa500')" ></li>
+
+        </ul>
+       
+        </section>
+        <script>
+         function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+         }
+         function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+             const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+
+         }
+      </script>
+    </body>
+</html>
