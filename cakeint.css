@@ -240,7 +240,7 @@ transform: translateY(-20px);
 }
 @media (max-width: 400px){
 
-     .pepusi img{
+     .pepusi{
         
         position: absolute;
         bottom: 50px;
